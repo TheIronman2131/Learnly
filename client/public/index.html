@@ -1,43 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnly - Welcome</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="#" class="logo">Learnly</a>
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Study Tools</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Flashcards</a></li>
+                        <li><a class="dropdown-item" href="#">Quizzes</a></li>
+                        <li><a class="dropdown-item" href="#">Note Taking</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">For Teachers</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Classroom Tools</a></li>
+                        <li><a class="dropdown-item" href="#">Lesson Plans</a></li>
+                        <li><a class="dropdown-item" href="#">Live Mode</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-center">
+            <form class="search-bar">
+                <input type="text" class="search-input" placeholder="Search for Flashcard Sets or Topics">
+            </form>
+        </div>
+        <div class="navbar-right">
+            <button class="btn create-btn">Create +</button>
+            <button class="btn login-btn">Login</button>
+        </div>
+    </nav>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- Landing Page Content -->
+    <div class="landing-container">
+        <h1>Welcome to Learnly</h1>
+        <h3>Who We Are</h3>
+        <p class="structured-paragraph">
+            At Learnly, our mission is simple: to lower the entry barrier to education for lower-class students. 
+            This platform is proudly student-programmed and managed, born out of a shared frustration with 
+            how other study platforms became pay-to-use beyond the most basic features. We provide free tools 
+            to empower learners worldwide. Unlike other platforms, we are proudly ad-free and do not sell user data. 
+            Our efforts are fueled entirely by the generosity of donors who believe in making quality education 
+            accessible to everyone.
+        </p>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+        <!-- Sign-Up Button -->
+        <div class="signup-container">
+            <button class="btn signup-btn">Sign Up for Free</button>
+        </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+        <!-- Feature Cards -->
+        <div class="features-container">
+            <div class="feature-card">
+                <img src="https://via.placeholder.com/250x150?text=Flashcards" alt="Flashcards" class="feature-image">
+                <h4>Flashcards</h4>
+                <p>Create and study personalized flashcards to master any topic efficiently.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://via.placeholder.com/250x150?text=Practice+Tests" alt="Practice Tests" class="feature-image">
+                <h4>Practice Tests</h4>
+                <p>Test your knowledge with customizable practice tests and track progress.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://via.placeholder.com/250x150?text=Note+Taking" alt="Note Taking" class="feature-image">
+                <h4>Note Taking</h4>
+                <p>Organize your thoughts with easy-to-use note-taking tools.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://via.placeholder.com/250x150?text=Live+Mode" alt="Live Mode" class="feature-image">
+                <h4>Live Mode</h4>
+                <p>Collaborate in real-time with classmates using our interactive live mode.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

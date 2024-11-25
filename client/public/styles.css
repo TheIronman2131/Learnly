@@ -1,0 +1,140 @@
+/* Import Modern Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Landing Content */
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    height: calc(100vh - 80px);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Heading 1 (H1) Styles */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem; /* Modern size */
+    font-weight: 700; /* Bold for emphasis */
+    text-align: center; /* Center-align text */
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Heading 4 (H4) Styles */
+h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center; /* Center-align text */
+    color: #555;
+    margin: 15px 0;
+}
+
+/* Paragraph Styles */
+p {
+    font-family: 'Roboto', sans-serif; /* Consistent modern font */
+    font-size: 1rem; /* Readable size */
+    line-height: 1.8; /* Enhance readability */
+    text-align: justify; /* Justify the text */
+    margin: 20px auto; /* Add space around */
+    max-width: 800px; /* Restrict paragraph width for readability */
+}
+
+/* Sign-Up Button */
+.signup-btn {
+    background-color: #007bff !important; /* Match blue theme */
+    color: #fff !important;
+    border: none; /* Clean look */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth interaction */
+}
+.signup-btn:hover {
+    background-color: #4255ff !important; /* Consistent hover state */
+    color: #fff !important;
+    transform: scale(1.05); /* Subtle zoom on hover */
+}
+
+/* Feature Cards */
+.features-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.feature-card:hover h4 {
+    color: #007bff; /* Highlight title in blue */
+}
+.feature-card:hover p {
+    color: #333; /* Darker text for emphasis */
+}
+
+.feature-card h4 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.feature-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Paragraph Block with Structured Design */
+.structured-paragraph {
+    max-width: 600px !important; /* Restrict width */
+    line-height: 1.8 !important; /* Improve line spacing */
+    margin: 60px auto !important; /* Add large vertical and horizontal spacing */
+    text-align: justify !important; /* Ensure neat alignment */
+    padding: 30px !important; /* Add space inside the block */
+    background-color: #f9f9f9 !important; /* Subtle background */
+    border-radius: 12px !important; /* Add smooth rounded corners */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1) !important; /* Soft shadow for depth */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

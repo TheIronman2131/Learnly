@@ -1,0 +1,148 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4255ff;
+    text-decoration: none;
+    margin-left: 15px; /* Adjusted left margin */
+}
+
+/* Dropdown Menus */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Space between logo and menus */
+}
+
+.dropdown-container {
+    display: flex;
+    gap: 20px; /* Space between dropdown menus */
+}
+
+.dropdown-toggle {
+    font-size: 1rem;
+    color: #555;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.dropdown-menu {
+    background-color: transparent; /* Remove background */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove shading */
+    padding: 10px 0; /* Keep or adjust padding as desired */
+    text-align: left;
+    list-style: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show menu on hover */
+}
+
+/* Search Bar */
+.navbar-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    max-width: 600px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Removed search button */
+
+/* Right Section Buttons */
+.navbar-right {
+    display: flex;
+    gap: 15px;
+}
+
+/* Create Button */
+.create-btn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 18px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.create-btn:hover {
+    background-color: #218838;
+}
+
+/* Login Button: Make it blue */
+nav .login-btn {
+    background-color: #007bff !important; /* Blue background */
+    color: #fff !important; /* White text */
+    border: none !important; /* No border */
+    border-radius: 20px !important; /* Rounded corners */
+    padding: 8px 18px !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
+    margin-right: 10px; /* Add right margin */
+}
+
+nav .login-btn:hover {
+    background-color: #0056b3 !important; /* Darker blue on hover */
+}
+.create-btn {
+    color: #007bff !important; /* Blue text */
+    text-decoration: none !important; /* Remove underline */
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: color 0.3s ease !important;
+}
+
+.create-btn:hover {
+    color: #0056b3 !important; /* Darker blue on hover */
+    
+}
+
+
