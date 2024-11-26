@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif; /* Modern, clean font */
-    background-color: #f9f9f9;
+    background-color: #F6f7fb !important;
     color: #333;
 }
 
@@ -41,15 +41,18 @@ h4 {
     margin: 15px 0;
 }
 
-/* Paragraph Styles */
-p {
-    font-family: 'Roboto', sans-serif; /* Consistent modern font */
-    font-size: 1rem; /* Readable size */
-    line-height: 1.8; /* Enhance readability */
-    text-align: justify; /* Justify the text */
-    margin: 20px auto; /* Add space around */
-    max-width: 800px; /* Restrict paragraph width for readability */
+/* Paragraph Styling */
+.structured-paragraph {
+    max-width: 800px; /* Restrict width for readability */
+    line-height: 1.8; /* Improve line spacing */
+    margin: 60px auto; /* Add vertical and horizontal spacing */
+    text-align: center; /* Center-align text with ragged edges */
+    padding: 0; /* No padding to keep it open */
+    background-color: transparent; /* No background for an open feel */
+    border: none; /* Remove border */
+    box-shadow: none; /* No shadow for a clean look */
 }
+
 
 /* Sign-Up Button */
 .signup-btn {
@@ -117,18 +120,6 @@ p {
 .feature-card p {
     font-size: 0.9rem;
     color: #555;
-}
-
-/* Paragraph Block with Structured Design */
-.structured-paragraph {
-    max-width: 600px !important; /* Restrict width */
-    line-height: 1.8 !important; /* Improve line spacing */
-    margin: 60px auto !important; /* Add large vertical and horizontal spacing */
-    text-align: justify !important; /* Ensure neat alignment */
-    padding: 30px !important; /* Add space inside the block */
-    background-color: #f9f9f9 !important; /* Subtle background */
-    border-radius: 12px !important; /* Add smooth rounded corners */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1) !important; /* Soft shadow for depth */
 }
 
 /* Responsive Adjustments */
