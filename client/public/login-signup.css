@@ -1,0 +1,224 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+/* Split Container */
+.auth-split {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    height: 80%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* Left Panel - Visual Design */
+.auth-left {
+    flex: 1;
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.auth-left h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.auth-left p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+/* Right Panel - Form Container */
+.auth-right {
+    flex: 1;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: #fff;
+}
+
+/* Toggle Buttons */
+.auth-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.toggle-btn {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    background: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.toggle-btn.active {
+    color: #fff;
+    background-color: #3498db;
+    box-shadow: 0 4px 10px rgba(52, 152, 219, 0.2);
+}
+
+/* Forms */
+.auth-form {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.auth-form.visible {
+    display: flex;
+}
+
+/* Social Login Buttons */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.social-login button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.social-login button i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.social-login button:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Fields */
+.auth-form input,
+.birthday-dropdown select {
+    padding: 14px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-form input:focus,
+.birthday-dropdown select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+    outline: none;
+}
+
+/* Birthday Dropdown Styling */
+.birthday-dropdown {
+    display: flex;
+    gap: 10px;
+}
+
+.birthday-dropdown select {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    appearance: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.birthday-dropdown select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+    outline: none;
+}
+
+/* Buttons */
+.auth-btn {
+    padding: 14px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-btn:hover {
+    background-color: #2874a6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Action Links */
+.auth-actions {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: right;
+}
+
+.auth-actions a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.auth-actions a:hover {
+    color: #2874a6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-split {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .auth-left {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .auth-right {
+        padding: 20px;
+    }
+}

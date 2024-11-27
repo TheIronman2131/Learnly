@@ -5,8 +5,63 @@
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif; /* Modern, clean font */
-    background-color: #F6f7fb !important;
+    background-color: #f9f9f9;
     color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4255ff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.dropdown-container {
+    display: flex;
+    gap: 20px;
+}
+
+.dropdown-menu {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 10px 0;
+    text-align: left;
+    list-style: none;
+}
+
+.dropdown-item {
+    padding: 8px 15px;
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+    color: #4255ff;
 }
 
 /* Landing Content */
@@ -16,7 +71,6 @@ body {
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    height: calc(100vh - 80px);
     padding: 20px;
     margin-top: 20px;
 }
@@ -41,32 +95,33 @@ h4 {
     margin: 15px 0;
 }
 
-/* Paragraph Styling */
-.structured-paragraph {
+/* Paragraph Styling - Centered with Natural Ragged Edges */
+.structured-paragraph,
+p {
     max-width: 800px; /* Restrict width for readability */
     line-height: 1.8; /* Improve line spacing */
-    margin: 60px auto; /* Add vertical and horizontal spacing */
-    text-align: center; /* Center-align text with ragged edges */
-    padding: 0; /* No padding to keep it open */
-    background-color: transparent; /* No background for an open feel */
-    border: none; /* Remove border */
-    box-shadow: none; /* No shadow for a clean look */
+    margin: 20px auto; /* Center the paragraph block */
+    text-align: center; /* Center-align text with natural ragged edges */
+    font-size: 1rem; /* Ensure readability */
+    color: #333; /* Subtle, readable color */
 }
-
 
 /* Sign-Up Button */
 .signup-btn {
-    background-color: #007bff !important; /* Match blue theme */
+    background-color: #007bff !important;
     color: #fff !important;
-    border: none; /* Clean look */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth interaction */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Ensure it looks like a button */
+    display: inline-block; /* Retain button-like appearance */
 }
 .signup-btn:hover {
-    background-color: #4255ff !important; /* Consistent hover state */
-    color: #fff !important;
-    transform: scale(1.05); /* Subtle zoom on hover */
+    background-color: #0056b3;
 }
 
 /* Feature Cards */
@@ -95,7 +150,7 @@ h4 {
 }
 
 .feature-card:hover {
-    transform: translateY(-5px) scale(1.02);
+    transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 

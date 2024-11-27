@@ -1,3 +1,10 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+Who dares to cross the bridge?
+John, who lost his job, started working at McDonalds.
+Joe, who won the lottery, retired from his job at the golf course last week.
+To whom should I give this gift?
+
+Whoever ate my cookie will feel pain.
+Whoever crashed into my car will lose their license.
+Whoever downlaods my program will have their data collected.
+
+You will need these items for the spring trip: a tent, shampoo, a rope, and a boat.
