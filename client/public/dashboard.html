@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <!-- Left Section: Hamburger Icon and Logo -->
+        <div class="navbar-left">
+            <i class="bi bi-list hamburger-icon"></i>
+            <div class="logo">Learnly</div>
+        </div>
+
+        <!-- Center Section: Search Bar -->
+        <div class="navbar-search">
+            <div class="search-wrapper">
+                <i class="bi bi-search search-icon"></i>
+                <input type="text" placeholder="Search for a Flashcard or Study Set" class="search-input">
+            </div>
+        </div>
+
+        <!-- Right Section: Create Menu and Profile Picture -->
+        <div class="navbar-right">
+            <!-- Create Button -->
+            <div class="create-dropdown">
+                <button class="btn create-btn">Create +</button>
+                <div id="create-menu" class="dropdown-menu hidden">
+                    <a href="#"><i class="bi bi-clipboard"></i> Study Set</a>
+                    <a href="#"><i class="bi bi-journal-text"></i> Flashcard Set</a>
+                </div>
+            </div>
+
+            <!-- Profile Picture -->
+            <img src="https://via.placeholder.com/40" alt="Profile Picture" class="profile-pic">
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar hidden">
+        <ul>
+            <li><a href="#" class="active"><i class="bi bi-house-door"></i> Home</a></li>
+            <li><a href="#"><i class="bi bi-folder"></i> Your Library</a></li>
+            <li><a href="#"><i class="bi bi-bell"></i> Notifications</a></li>
+
+            <div class="section-divider"></div>
+
+            <li><a href="#"><i class="bi bi-plus-circle"></i> New Folder</a></li>
+            <div class="section-divider"></div>
+
+            <p>Start Here</p>
+            <li><a href="#"><i class="bi bi-journal"></i> Flashcards</a></li>
+            <li><a href="#"><i class="bi bi-star"></i> Study Guides</a></li>
+            <li><a href="#"><i class="bi bi-book"></i> Expert Solutions</a></li>
+        </ul>
+    </div>
+
+    <script src="./dashboard.js"></script>
+</body>
+</html>

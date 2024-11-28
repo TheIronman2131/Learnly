@@ -1,0 +1,247 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    height: 60px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 15px;
+    color: #333;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4255ff;
+}
+
+/* Search Bar */
+.navbar-search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    padding: 8px 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.search-icon {
+    font-size: 1.2rem;
+    color: #888;
+    margin-right: 10px;
+}
+
+.search-input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* Navbar Right Section */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Create Button */
+.create-btn {
+    background-color: #4255ff; /* Default blue background */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    padding: 8px 16px; /* Inner padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Standard button font size */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.create-btn:hover {
+    background-color: #2e42cc; /* Darker blue on hover */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute; /* Positioned relative to the Create button */
+    top: 60px; /* Dropdown appears below the Create button */
+    right: 20px; /* Align to the right of the button */
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light gray border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    border-radius: 10px; /* Rounded corners for modern look */
+    padding: 20px 15px; /* Extra padding for space inside */
+    z-index: 1000; /* Ensure it appears above other elements */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-10px); /* Slightly shifted up */
+    pointer-events: none; /* Prevent interactions when hidden */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth fade and slide animation */
+}
+
+.dropdown-menu.visible {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+    pointer-events: auto; /* Enable interactions */
+}
+
+.dropdown-menu a {
+    display: flex; /* Flex layout for icon and text */
+    align-items: center; /* Vertically center items */
+    gap: 10px; /* Space between icon and text */
+    padding: 12px 15px; /* Padding around each link */
+    text-decoration: none; /* Remove underline */
+    color: #555; /* Neutral text color */
+    font-size: 1rem; /* Standard font size */
+    font-weight: 500; /* Slightly bold for readability */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+    border-radius: 8px; /* Slightly rounded for modern look */
+    margin-bottom: 10px; /* Space between links */
+}
+
+.dropdown-menu a:hover {
+    background-color: #e6e9ff; /* Light blue background on hover */
+    color: #4255ff; /* Match Create button color */
+}
+
+.dropdown-menu a i {
+    font-size: 1.2rem; /* Icon size */
+    color: #888; /* Icon color */
+    transition: color 0.3s ease; /* Smooth icon color transition */
+}
+
+.dropdown-menu a:hover i {
+    color: #4255ff; /* Match Create button color on hover */
+}
+
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: calc(100% - 60px);
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%); /* Slide out of view initially */
+    transition: transform 0.3s ease-in-out; /* Smooth slide-in/out animation */
+    z-index: 999;
+}
+
+.sidebar.visible {
+    transform: translateX(0); /* Slide into view */
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #e6e9ff;
+    color: #4255ff;
+}
+
+.sidebar ul li a.active {
+    background-color: #f1f4ff;
+    color: #4255ff;
+    font-weight: bold;
+}
+
+.section-divider {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 20px 0;
+}
+
+.sidebar p {
+    font-size: 0.9rem;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+/* Navbar Right Section */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between elements */
+    padding-right: 30px; /* Prevent items from touching screen edge */
+}
+
+.profile-pic {
+    width: 40px; /* Ensure fixed dimensions */
+    height: 40px; /* Keep aspect ratio */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Maintain image proportions */
+    margin-left: auto; /* Push it inward from the screen edge */
+}
+
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 30px; /* Reduce size on smaller screens */
+        height: 30px;
+    }
+}
